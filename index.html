@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Mohammed Said Ali">
+    <meta name="description" content="The calculator is essential to do day to day calculations. This mini app is made with Html, sass and javascript. This app is mobile responsive and also have dark and light theme switcher.">
+    <meta name="keywords" content="Html, css, sass, javascript">
+    <!-- font awesome  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- end of font awesome  -->
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./sass/style.css">
+    <link rel="shortcut icon" href="./assets/calculator.webp" type="image/x-icon">
+    <!-- end of stylesheet -->
+    <!-- Js script -->
+    <script src="/app.js" defer></script>
+    <!-- end od js script -->
+    <title>Calculator App | Dev zilla</title>
+</head>
+<body>
+    <!-- container -->
+    <div class="container">
+        <div class="calculator">
+            <!-- calculation header  -->
+            <div class="calculator__header">
+                <!-- theme switcher -->
+                <div class="theme__switcher">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-moon"></i>
+                </div>
+                <!-- end of theme switcher -->
+
+                <div class="calculator__screen">
+                    <!-- calculation pending -->
+                    <div class="calculator__calulation-area">
+                        <span></span> 
+                    </div>
+                    <!-- end of  calculation pending -->
+                    <!-- calculation result -->
+                    <div class="calution__result">
+                        <span>0</span>
+                    </div>
+                    <!-- end of calculation result -->
+                </div>
+            </div>
+            <!-- end of calculation header -->
+
+            <!-- calculation body -->
+            <div class="calculator__body">
+                <!-- buttons -->
+                <div class="calculation__btns">
+                    <!-- column 1 -->
+                    <button class="btn btn__specials btn__clearAll">AC</button>
+                    <button class="btn btn__specials btn__conversion">x</button>
+                    <button class="btn btn__specials btn__percentage">%</button>
+                    <button class="btn btn__calc">/</button>
+                    <!-- end of column 1 -->
+
+                    <!-- column 2 -->
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+                    <button class="btn btn__calc">*</button>
+                    <!-- end of column 2 -->
+
+                    <!-- column 3 -->
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+                    <button class="btn btn__calc">-</button>
+                    <!-- end of column 3 -->
+
+                    <!-- column 4 -->
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+                    <button class="btn btn__calc">+</button>
+                    <!-- end of column 4 -->
+
+                    <!-- column 4 -->
+                    <button class="btn btn__clear">
+                        <i class="fa-solid fa-arrow-rotate-left"></i>
+                    </button>
+                    <button class="btn">0</button>
+                    <button class="btn">.</button>
+                    <button class="btn btn__calc">=</button>
+                    <!-- end of column 4 -->
+                </div>
+                <!-- end of  buttons -->
+            </div>
+            <!-- end of calculation body -->
+        </div>
+    </div>
+    <!-- end of container -->
+</body>
+</html>
