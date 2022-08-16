@@ -29,7 +29,7 @@ allThemeSwitcher.forEach(switcher => {
 allBtn.forEach(btn => {
     btn.addEventListener("click", (e)=>{
          values = "";
-        values += e.target.textContent
+        values += (e.target.textContent)
         changeScreenValue(values)
     })
 })
@@ -77,7 +77,7 @@ const changeScreenValue = (value) =>{
 
     if(calcArea.textContent.length > 30){
         alert("Too big")
-        return 
+        return;
     }
     calcArea.textContent += `${value?.replace(/[x=%]/i, "")}`
 
@@ -95,8 +95,6 @@ const changeScreenValue = (value) =>{
         calcArea.textContent = ""
         calcSum.textContent = 0
     })
-
-    
 }
 
 
